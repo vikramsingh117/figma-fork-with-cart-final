@@ -354,13 +354,13 @@ const Home = () => {
         handleActiveElement={handleActiveElement}
       />
   
-      <section className="flex h-full flex-row gap-4 p-4">
+      <section className="flex h-full bg-gray-900 text-white p-4 flex-row gap-4 p-4">
         {/* Left Sidebar */}
         <LeftSidebar allShapes={Array.from(canvasObjects)} />
   
         {/* Product List */}
-        <div className="w-1/4 bg-white p-4 rounded-lg shadow-lg transition-transform hover:scale-105">
-          <h2 className="font-bold text-xl mb-4">Products</h2>
+        <div className="w-1/4 bg-gray-900 text-white p-4 p-4 rounded-lg shadow-lg transition-transform hover:scale-105">
+          <h2 className="font-bold text-xl mb-4">Products from Fake store API</h2>
           <ul className="space-y-4">
             {products.length === 0 ? (
               <li>Loading products...</li>
@@ -387,7 +387,7 @@ const Home = () => {
         </div>
   
         {/* Shopping Cart */}
-        <div className="w-1/4 bg-white p-4 rounded-lg shadow-lg">
+        <div className="w-1/4 bg-gray-900 text-white p-4 rounded-lg shadow-lg">
           <h2 className="font-bold text-xl mb-4">Shopping Cart</h2>
           {cart.length === 0 ? (
             <p>Your cart is empty</p>
