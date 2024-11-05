@@ -359,7 +359,7 @@ const Home = () => {
         <LeftSidebar allShapes={Array.from(canvasObjects)} />
   
         {/* Product List */}
-        <div className="w-1/4 bg-gray-900 text-white p-4 p-4 rounded-lg shadow-lg transition-transform hover:scale-105">
+        <div className="w-1/4 bg-gray-900 text-white p-4 p-4 rounded-lg shadow-lg transition-transform hover:scale-105 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 scrollbar-thumb-gray-400 scrollbar-track-gray-700 overflow-y-auto">
           <h2 className="font-bold text-xl mb-4">Products from Fake store API</h2>
           <ul className="space-y-4">
             {products.length === 0 ? (
