@@ -1,4 +1,5 @@
 "use client";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { fabric } from "fabric";
 import { useEffect, useRef, useState } from "react";
@@ -32,6 +33,8 @@ type CartItem = {
   quantity: number;
 };
 const Home = () => {
+  <SpeedInsights />
+
   const undo = useUndo();
   const redo = useRedo();
   const [products, setProducts] = useState<any[]>([]); // New state for products
