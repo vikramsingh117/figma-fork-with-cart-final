@@ -1,5 +1,6 @@
 "use client";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from '@vercel/analytics/react';
 
 import { fabric } from "fabric";
 import { useEffect, useRef, useState } from "react";
@@ -332,7 +333,12 @@ const Home = () => {
   }, [canvasObjects]);
 
   return (
+    
     <main className="h-screen overflow-hidden bg-gray-50 min-h-screen">
+        <SpeedInsights />
+        <Analytics />
+
+
       <Navbar
         imageInputRef={imageInputRef}
         activeElement={activeElement}
