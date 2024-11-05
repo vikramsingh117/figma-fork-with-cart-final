@@ -1,4 +1,5 @@
 import { Work_Sans } from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,9 +19,12 @@ const workSans = Work_Sans({
 });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
+  
   <html lang='en'>
+      <SpeedInsights />
     <body className={`${workSans.className} bg-primary-grey-200`}>
       <Room>
+
         <TooltipProvider>{children}</TooltipProvider>
       </Room>
     </body>
