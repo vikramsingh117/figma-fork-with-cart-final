@@ -15,7 +15,7 @@ import {
 const selectConfigs = [
   {
     property: "fontFamily",
-    placeholder: "Choose a font",
+    placeholder: "font to pikc",
     options: fontFamilyOptions,
   },
   { property: "fontSize", placeholder: "30", options: fontSizeOptions },
